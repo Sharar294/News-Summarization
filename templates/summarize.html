@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary</title>
+</head>
+<body>
+    <h1>Summary</h1>
+    {% if summary %}
+        <p>{{ summary }}</p>
+    {% elif error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <a href="/">Go back</a>
+</body>
+</html>
